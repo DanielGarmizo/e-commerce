@@ -181,7 +181,7 @@ align-items: center;
 .row-one div{
     width: 20%;
     /* background-color: rgb(18, 18, 18); */
-    background: linear-gradient(to bottom, black, #001f33, black);
+    /* background: linear-gradient(to bottom, black, #001f33, black); */
 }
 
 .best-seller{
@@ -198,7 +198,7 @@ align-items: center;
 .row-two div{
     width: 20%;
     /* background-color: rgb(18, 18, 18); */
-    background: linear-gradient(to bottom, black, #001f33, black);
+    /* background: linear-gradient(to bottom, black, #001f33, black); */
 }
 .on-sale{
     color: white;
@@ -216,7 +216,7 @@ align-items: center;
 .row-three div{
     width: 20%;
     /* background-color: rgb(18, 18, 18); */
-    background: linear-gradient(to bottom, black, #001f33);
+    /* background: linear-gradient(to bottom, black, #001f33); */
 }
 
 .footer{
