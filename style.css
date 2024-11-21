@@ -1,0 +1,241 @@
+
+
+/* * {
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+} */
+.img-product{
+    background-color: white;
+    border-radius: 13px;
+}
+
+
+.price-row-one,
+ .price-row-two,
+ .price-row-three{
+    position: absolute;
+    color: black;
+    top: 90%;
+    font-size: 92%;
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+h1 , h2 , h3 , h4 {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: black;
+    
+    
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    opacity: 65%;
+
+}
+
+
+.product:hover{
+    box-shadow: 50em;
+    opacity: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+video{
+    /* max-width: 100%; */
+    max-height: 100%;
+    object-fit: cover;
+}
+img{
+    max-width: 100%;
+
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+     outline: none;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    width: 100%;
+    height: 3%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+background-color: black;
+}
+
+.logo{
+width: 3%;
+}
+
+.vid{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav{
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.nav div{
+    color: white;
+}
+.shop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(18, 18, 18); */
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    /* background-color: rgb(8 18 34); */
+    background: linear-gradient(to bottom, black, #001f33, black);
+}
+.product{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.row-one{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 5vh;
+}
+.row-one div{
+    width: 20%;
+    /* background-color: rgb(18, 18, 18); */
+    background: linear-gradient(to bottom, black, #001f33, black);
+}
+
+.best-seller{
+    color: white;
+}
+
+.row-two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.row-two div{
+    width: 20%;
+    /* background-color: rgb(18, 18, 18); */
+    background: linear-gradient(to bottom, black, #001f33, black);
+}
+.on-sale{
+    color: white;
+}
+.row-three{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.other{
+    color: white;
+}
+.row-three div{
+    width: 20%;
+    /* background-color: rgb(18, 18, 18); */
+    background: linear-gradient(to bottom, black, #001f33);
+}
+
+.footer{
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 15%;
+
+}
+.checkout{
+    height: auto;
+    width: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 4%;
+}
+.arrow{
+    display: inline;
+    width: 20%;
+    height: 20%;
+    margin-left: 30%;
+    position: relative;
+  animation: move-left-right 2s infinite;
+}
+@keyframes move-left-right {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+.shop{
+    display: inline;
+    width: 28%;
+    height: 25%;
+}
+.facebook,
+.whatsapp,
+.instagram{
+    width: 3%;
+    opacity: 80%;
+    margin-top: 15%;
+    position: relative;
+}
+.whatsapp::before{
+    content: "Follow Us";
+    position: absolute;
+    left: -22vw;
+    bottom: 1vh;
+}
