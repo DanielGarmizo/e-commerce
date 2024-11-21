@@ -11,6 +11,7 @@
 }
 
 
+
 .price-row-one,
  .price-row-two,
  .price-row-three{
@@ -23,6 +24,43 @@ a{
     text-decoration: none;
     color: white;
     
+}
+
+.navigation {
+    position: relative;
+}
+
+.drop-content {
+    opacity: 0; /* התפריט יהיה שקוף */
+    visibility: hidden; /* התפריט לא יהיה גלוי */
+    position: absolute;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 175%;
+    min-width: 100%;
+    margin-top: 5%;
+    z-index: 1;
+    text-align: center;
+    right: -2vw;
+    padding: 5%;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* אנימציה רכה */
+}
+
+.drop-content a {
+    display: block;
+    padding: 3%;
+}
+
+.navigation:hover .drop-content,
+.drop-content:hover {
+    opacity: 1; /* התפריט יהיה גלוי */
+    visibility: visible; /* התפריט יהיה נגיש */
+    transition: opacity 0.3s ease, visibility 0s linear 0s; /* התפריט יפוך לגלוי מיד */
+}
+
+.drop-content a:hover {
+    background-color: #333333; /* שינוי צבע בזמן ריחוף */
 }
 h1 , h2 , h3 , h4 {
     margin: 0;
