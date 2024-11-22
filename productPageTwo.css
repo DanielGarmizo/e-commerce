@@ -73,14 +73,15 @@ img{
     /* grid-template-columns: 1fr;
     grid-template-rows: 1fr; */
     border-radius: 20px;
+    position: relative;
 
 }
 
 .brand{
-    position: absolute;
-    color: black;
-    left: 4vw;
-    bottom: -1vh;
+  color: black;
+  position: absolute;
+  left: 4.5vw;
+  bottom: -1vh;
 
 }
 .left{
