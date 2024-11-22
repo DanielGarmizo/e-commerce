@@ -3,6 +3,20 @@
     margin: 0;
     /* border-bottom: 1px solid red; */
 }
+.social a{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: auto;
+    height: auto;
+
+    
+}
+.social a img{
+    display: block; /* מסיר רווחים בין האלמנט ל-inline */
+    width: 100%; /* מבטיח שהתמונה תתפוס את כל רוחב ה-a */
+    height: auto; /* שומר על פרופורציות התמונה */
+}
 h1, h2, h3{
     margin: 0;
     padding: 0;
@@ -25,6 +39,21 @@ img{
     align-items: center;
     z-index: 0;
     background: linear-gradient(to bottom, black, #001f33, black);
+}
+.social{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    left: 30.8vw;
+    z-index: 5;
+    top: 33vh;
+    gap: 4%;
+}
+.social-img:hover{
+    transform: translateY(-7%);
+
 }
 .back{
     position: absolute;
