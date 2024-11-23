@@ -77,7 +77,7 @@ img{
 
 .back-button{
 border-radius: 5px;
- background-color: antiquewhite;
+ background-color: white;
   width: 159%;
 }
 
@@ -140,7 +140,7 @@ font-size: 95%;
 }
 
 .circle-pay{
-  background-color: wheat;
+  background-color: white;
   width: 80%;
   height: 20%;
   border-radius: 50%;
@@ -153,7 +153,7 @@ font-size: 95%;
   transition: all ease-in-out 0.5s;
 }
 .circle-pay:hover{
-  background-color: white;
+  background-color: wheat;
   transform: translateY(-7%);
 }
 .h3-pay{
@@ -450,7 +450,7 @@ gap: 4%;
 flex-direction: column;
 }
 .circle-pay:hover{
-background-color: rgb(49, 0, 134);
+  background-color:rgb(206, 184, 143);
 transform: translateY(-7%);
 }
 

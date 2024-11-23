@@ -88,7 +88,7 @@ img {
 
 .back-button {
   border-radius: 5px;
-  background-color: antiquewhite;
+  background-color: white;
   width: 159%;
 }
 
@@ -157,7 +157,7 @@ img {
 }
 
 .circle-pay {
-  background-color: wheat;
+  background-color: white;
   width: 80%;
   height: 20%;
   border-radius: 50%;
@@ -171,7 +171,7 @@ img {
 }
 
 .circle-pay:hover {
-  background-color: white;
+  background-color: wheat;
   transform: translateY(-7%);
 }
 
@@ -467,7 +467,7 @@ input[type="radio"] {
   }
 
   .circle-pay:hover {
-    background-color: rgb(49, 0, 134);
+    background-color:rgb(206, 184, 143);
     transform: translateY(-7%);
   }
 
