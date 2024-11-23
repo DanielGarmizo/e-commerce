@@ -99,7 +99,7 @@ border-radius: 5px;
 .brand {
 position: absolute;
 color: black;
-left: 5.5vw;
+left: 7.5vw;
 bottom: -1vh;
 font-size: 95%;
 }
@@ -265,7 +265,7 @@ left: 0.1vw;
 .brand {
 position: absolute;
 color: black;
-left: 16.5vw;
+left: 19.5vw;
 bottom: 0vh;
 font-size: 129%;
 }
@@ -335,13 +335,14 @@ height: 25%;
 top: -23%;
 }
 
-.brand {
-position: absolute;
-color: black;
-left: 10.5vw;
-bottom: -7vh;
-font-size: 122%;
-}
+
+  .brand {
+      position: absolute;
+      color: black;
+      left: 16.5vw;
+      bottom: -5vh;
+      font-size: 122%;
+  }
 
 .buttons{
 display: flex
