@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  /* border-bottom: 1px solid red; */
 }
 
 .social a {
@@ -18,11 +17,8 @@
 
 .social-img {
   display: block;
-  /* מסיר רווחים בין האלמנט ל-inline */
   width: 100%;
-  /* מבטיח שהתמונה תתפוס את כל רוחב ה-a */
   height: auto;
-  /* שומר על פרופורציות התמונה */
 }
 
 .whatsapp {
@@ -102,8 +98,7 @@ img {
   display: flex;
   background-color: rgb(255, 255, 255);
   opacity: 90%;
-  /* grid-template-columns: 1fr;
-  grid-template-rows: 1fr; */
+  
   border-radius: 20px;
 
 }
@@ -183,12 +178,10 @@ img {
 
 
 .start {
-  /* grid-column: 1/2;
-  grid-row: 1/2; */
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  /* gap: 2%; */
   width: 80%;
   height: 100%;
   flex-direction: column;

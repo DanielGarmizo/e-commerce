@@ -1,81 +1,9 @@
 
+/* There are duplicates of some classes here.. i am aware of it, and i did because i had bugs.
+ this is a solution for over come those bugs for now.
+ dont remove it*/
 
 
-.img-product{
-    background-color: white;
-    border-radius: 13px;
-}
-
-.miluim{
-    background-color: white;
-    border-radius: 5px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    position: fixed;
-    bottom: 3vh;
-    width: 10vw;
-    text-align: center;
-    cursor: pointer;
-}
-.miluim img{
-    width: 15%;
-}
-
-.price-row-one,
- .price-row-two,
- .price-row-three{
-    position: absolute;
-    color: black;
-    top: 90%;
-    font-size: 92%;
-}
-a{
-    text-decoration: none;
-    color: white;
-    
-}
-
-.navigation {
-    position: relative;
-}
-
-.drop-content {
-    opacity: 0; /* התפריט יהיה שקוף */
-    visibility: hidden; /* התפריט לא יהיה גלוי */
-    position: absolute;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    width: 175%;
-    min-width: 100%;
-    margin-top: 5%;
-    z-index: 1;
-    text-align: center;
-    right: -2vw;
-    padding: 5%;
-    transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* אנימציה רכה */
-}
-
-.drop-content a {
-    display: block;
-    padding: 3%;
-}
-
-.navigation:hover .drop-content,
-.drop-content:hover {
-    opacity: 1; /* התפריט יהיה גלוי */
-    visibility: visible; /* התפריט יהיה נגיש */
-    transition: opacity 0.3s ease, visibility 0s linear 0s; /* התפריט יפוך לגלוי מיד */
-}
-
-.drop-content a:hover {
-    background-color: #333333; /* שינוי צבע בזמן ריחוף */
-}
-h1 , h2 , h3 , h4 {
-    margin: 0;
-    padding: 0;
-}
 body {
     display: flex;
     justify-content: center;
@@ -85,37 +13,21 @@ body {
     
     
 }
-.product{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    transition: ease-in-out 0.3s;
-    cursor: pointer;
-    opacity: 65%;
 
-}
-
-
-.product:hover{
-    box-shadow: 50em;
-    opacity: 100%;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    }
-.hero{
-    /* max-width: 100%; */
-    max-height: 100%;
-    object-fit: cover;
-    position: relative;
-    z-index: 0;
-}
-
-.video-text{
+a{
+    text-decoration: none;
     color: white;
-    z-index: 1;
-    position: relative;
-    left: 42vw;
-    top: 5vh;
+    
+}
+
+h1 , h2 , h3 , h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.img-product{
+    background-color: white;
+    border-radius: 13px;
 }
 
 img{
@@ -128,12 +40,14 @@ button{
     background: none;
      outline: none;
 }
+
 .container{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
+
 .header{
     width: 100%;
     height: 3%;
@@ -145,8 +59,21 @@ background-color: black;
 }
 
 .logo{
-width: 3%;
+    width: 3%;
+    }
+
+.navigation {
+    position: relative;
 }
+
+
+.hero{
+    max-height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 0;
+}
+
 
 .vid{
     width: 100%;
@@ -155,6 +82,16 @@ width: 3%;
     align-items: center;
     justify-content: center;
 }
+
+.video-text{
+    color: white;
+    z-index: 1;
+    position: relative;
+    left: 42vw;
+    top: 5vh;
+}
+
+
 .nav{
     width: 100%;
     height: 8vh;
@@ -164,92 +101,45 @@ width: 3%;
     align-items: center;
     gap: 10%;
 }
+
 .nav div{
     color: white;
 }
-.shop{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.drop-content a {
+    display: block;
+    padding: 3%;
 }
 
-.main{
-    width: 100%;
-    height: 50%;
-    /* background-color: rgb(18, 18, 18); */
-    display: flex;
-    flex-direction: column;
-    gap: 10vh;
-    /* background-color: rgb(8 18 34); */
-    background: linear-gradient(to bottom, black, #001f33, black);
-}
-.product{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
+.navigation:hover .drop-content,
+.drop-content:hover {
+    opacity: 1; 
+    visibility: visible; 
+    transition: opacity 0.3s ease, visibility 0s linear 0s; 
 }
 
-.row-one{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    margin-top: 5vh;
-}
-.row-one div{
-    width: 20%;
-    /* background-color: rgb(18, 18, 18); */
-    /* background: linear-gradient(to bottom, black, #001f33, black); */
+.drop-content a:hover {
+    background-color: #333333; 
 }
 
-.best-seller{
-    color: white;
-}
-
-.row-two{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-}
-.row-two div{
-    width: 20%;
-    /* background-color: rgb(18, 18, 18); */
-    /* background: linear-gradient(to bottom, black, #001f33, black); */
-}
-.on-sale{
-    color: white;
-}
-.row-three{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-}
-.other{
-    color: white;
-}
-.row-three div{
-    width: 20%;
-    /* background-color: rgb(18, 18, 18); */
-    /* background: linear-gradient(to bottom, black, #001f33); */
-}
-
-.footer{
-    width: 100%;
-    height: 30vh;
+.drop-content {
+    opacity: 0; 
+    visibility: hidden; 
+    position: absolute;
     background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    gap: 15%;
-
+    color: white;
+    border-radius: 5px;
+    width: 175%;
+    min-width: 100%;
+    margin-top: 5%;
+    z-index: 1;
+    text-align: center;
+    right: -2vw;
+    padding: 5%;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s; 
 }
+
+
 .checkout{
     height: auto;
     width: 7%;
@@ -267,6 +157,141 @@ align-items: center;
     position: relative;
   animation: move-left-right 2s infinite;
 }
+
+.shop{
+    display: inline;
+    width: 28%;
+    height: 25%;
+}
+
+
+
+
+.main{
+    width: 100%;
+    height: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+   
+    background: linear-gradient(to bottom, black, #001f33, black);
+}
+
+
+.row-one{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 5vh;
+}
+.row-one div{
+    width: 20%;
+   
+}
+
+.best-seller{
+    color: white;
+}
+
+
+.price-row-one,
+ .price-row-two,
+ .price-row-three{
+    position: absolute;
+    color: black;
+    top: 90%;
+    font-size: 92%;
+}
+
+
+.row-two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.row-two div{
+    width: 20%;
+ 
+}
+.on-sale{
+    color: white;
+}
+.row-three{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+.other{
+    color: white;
+}
+.row-three div{
+    width: 20%;
+ 
+}
+
+
+
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    opacity: 65%;
+
+}
+
+
+.product:hover{
+    box-shadow: 50em;
+    opacity: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+
+
+
+.shop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.product{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 15%;
+
+}
+
 @keyframes move-left-right {
     0% {
       transform: translateX(0);
@@ -279,11 +304,24 @@ align-items: center;
     }
   }
 
-.shop{
-    display: inline;
-    width: 28%;
-    height: 25%;
+
+  .miluim{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: fixed;
+    bottom: 3vh;
+    width: 10vw;
+    text-align: center;
+    cursor: pointer;
 }
+.miluim img{
+    width: 15%;
+}
+
+
 .facebook,
 .whatsapp,
 .instagram{
@@ -394,19 +432,15 @@ align-items: center;
     .main {
         width: 100%;
         height: 50%;
-        /* background-color: rgb(18, 18, 18); */
         display: flex
     ;
         flex-direction: column;
         gap: 0vh;
-        /* background-color: rgb(8 18 34); */
         background: linear-gradient(to bottom, black, #001f33, black);
     }
 
     .row-three div {
         width: 49%;
-        /* background-color: rgb(18, 18, 18); */
-        /* background: linear-gradient(to bottom, black, #001f33); */
     }
 
     .footer{
