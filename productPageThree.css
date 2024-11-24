@@ -1,3 +1,10 @@
+/* There are duplicates of some classes here.. i am aware of it, and i did because i had bugs.
+ this is a solution for over come those bugs for now.
+ dont remove it*/
+
+ /*This site is responsive for 480px and 760 px*/
+
+
 * {
   padding: 0;
   margin: 0;
